@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Festiviews</title>
     <link rel="stylesheet" href="styles/style.css" class="rel" />
+    <script src="https://kit.fontawesome.com/7acb2867d6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
+      <!-- Navbar -->
       <nav>
         <img src="/assets/logo.png" alt="" />
         <ul>
-          <a href="#Home">Home</a>
-          <a href="#Reviews">Reviews</a>
-          <a href="#Contact">Contact</a>
-          <a href="#Socials">Socials</a>
+          <a href="#home">Home</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <a href="#socials">Socials</a>
           <a href="#toggle">🌑</a>
         </ul>
       </nav>
+      <!-- Header section -->
       <header>
         <h1>
           Nauwkeurige Festivalbeoordelingen: Ontdek en Geniet met Vertrouwen!
@@ -32,10 +35,151 @@
           beleef festivals als nooit tevoren
         </p>
         <section class="headerInfo">
-          <button class="leftButton animate">Review</button>
-          <button class="rightButton animate">Contact</button>
+          <button class="leftButton">Review</button>
+          <button class="rightButton">Contact</button>
         </section>
       </header>
+      <!-- Reviews -->
+      <section class="reviews" id="reviews">
+        <h1>Mijn Recensies</h1>
+        <div class="festival-container">
+          <article>
+            <div class="festival-content">
+              <img src="/assets/sunglow.jpg" alt="sunglow" />
+              <h2>Sunglow Festival</h2>
+              <p>⭐⭐⭐⭐</p>
+              <p>
+                Het Hardcore Festival in de Hoeksche Waard is een jaarlijks
+                spektakel dat hardcore muziekliefhebbers uit heel Nederland
+                aantrekt. Met een diverse line-up en een prachtige natuurlijke
+                omgeving, combineert het festival meedogenloze beats met de
+                schoonheid van de Hoeksche Waard. Het is een viering van passie,
+                eenheid en hardcore muziek die jaarlijks duizenden mensen in
+                vervoering brengt
+              </p>
+              <button class="review-button">Link</button>
+            </div>
+          </article>
+          <article>
+            <div class="festival-content">
+              <img src="/assets/harmony.jpg" alt="harmony" />
+              <h2>Harmony of Hardcore</h2>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                Het Hardcore Festival in Erp, nabij Eindhoven, is een jaarlijks
+                evenement dat hardcore muziekliefhebbers uit de regio en
+                daarbuiten aantrekt. Met een krachtige line-up en onvergetelijke
+                beats, viert het festival de passie voor hardcore muziek in een
+                bruisende sfeer van eenheid en energie. Het is een hoogtepunt
+                voor de muziekscene in de buurt van Eindhoven en brengt mensen
+                samen voor een nacht vol intense beats.
+              </p>
+              <button class="review-button">Link</button>
+            </div>
+          </article>
+          <article>
+            <div class="festival-content">
+              <img src="/assets/intents.jpg" alt="intents" />
+              <h2>Intents</h2>
+              <p>⭐⭐⭐⭐</p>
+              <p>
+                Intents Festival is een jaarlijks evenement in Nederland dat
+                elektronische muziek en dancecultuur viert. Met een
+                indrukwekkende line-up van DJ's en artiesten, trekt dit festival
+                duizenden muziekliefhebbers aan. Intents biedt een
+                onvergetelijke ervaring voor iedereen die van elektronische
+                muziek houdt. Het is een hoogtepunt in de festivalagenda van
+                Nederland en staat garant voor een weekend vol muziek en
+                plezier.
+              </p>
+              <button class="review-button">Link</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section class="contact-title" id="contact">
+        <h3>Contactformulier</h3>
+      </section>
+          <div class="center-container">
+            <form class="contact-form" action="POST">
+              <div class="row">
+                <div class="collom">
+                  <label for="firstName"><i class="fa-solid fa-user"></i>Voornaam</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="Voornaam"
+                    class="halfInput"
+                    required
+                  />
+                  <label for="email"><i class="fa-solid fa-envelope"></i>Email</label>
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="Email"
+                    class="full"
+                  />
+                  <label for="city"><i class="fa-solid fa-house"></i>Woonplaats</label>
+                  <input
+                    type="text"
+                    name="city"
+                    placeholder="Woonplaats"
+                    class="halfInput"
+                    required
+                  />
+                  <label for="message"><i class="fa-solid fa-envelope"></i>Bericht</label>
+                  <textarea name="message" class="message" id="message" cols="50" rows="4" placeholder="Schrijf je bericht hier..." required></textarea>
+                </div>
+                <div class="collom">
+                  <label for="lastName"><i class="fa-solid fa-user"></i>Achternaam</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Achternaam"
+                    class="halfInput required"
+                  />
+                  <label for="dob"><i class="fa-regular fa-calendar"></i>Geboortedatum</label>
+                  <input
+                    type="date"
+                    name="dob"
+                    placeholder="dd-mm-jj"
+                    class="halfInput required"
+                    />
+                  <label for="selector"><i class="fa-solid fa-eye"></i>Onderwerp</label>
+                  <select
+                    name="selector"
+                    class="full"
+                  >
+                    <option>Kies onderwep van het bericht...</option>
+                    <option>Meer Informatie</option>
+                    <option>Klacht</option>
+                    <option>Samenwerking</option>
+                  </select>
+                  <label for="Newsletter"><i class="fa-solid fa-envelope-open-text"></i>Inschrijven voor de nieuwsbrief?<label>
+                  <div class="formOption">
+                    <input type="radio" name="Newsletter">Ja</radio>
+                    <input type="radio" name="Newsletter">Nee</radio>
+                  </div>
+                  
+                    <input
+                      type="checkbox"
+                      name="check"
+                      placeholder=""
+                      class="check"
+                      required
+                    />
+                    <label class="check-label" for="check">
+                      <i class="fa-solid fa-handshake"></i>Ik ga akkoord met de voorwaarden
+                    </label>
+                    <button type="submit">Versturen</button>
+                </div>
+                </div>
+            </form>
+            <!-- Footer section -->
+            <footer id="socials">
+
+            </footer>
     </main>
   </body>
 </html>
