@@ -101,7 +101,6 @@
       <section class="contact-title" id="contact">
         <h3>Contactformulier</h3>
       </section>
-          <div class="center-container">
             <form class="contact-form" action="POST">
               <div class="row">
                 <div class="collom">
@@ -156,8 +155,11 @@
                     <option>Klacht</option>
                     <option>Samenwerking</option>
                   </select>
-                  <label for="Newsletter"><i class="fa-solid fa-envelope-open-text"></i>Inschrijven voor de nieuwsbrief?<label>
                   <div class="formOption">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                  <label for="Newsletter">Inschrijven voor de nieuwsbrief?<label>
+                  </div>
+                  <div>
                     <input type="radio" name="Newsletter">Ja</radio>
                     <input type="radio" name="Newsletter">Nee</radio>
                   </div>
@@ -169,16 +171,35 @@
                       class="check"
                       required
                     />
+                    <div class="formOption">
+                    <i class="fa-solid fa-handshake"></i>
                     <label class="check-label" for="check">
-                      <i class="fa-solid fa-handshake"></i>Ik ga akkoord met de voorwaarden
+                    Ik ga akkoord met de voorwaarden
                     </label>
+                    </div>
                     <button type="submit">Versturen</button>
                 </div>
                 </div>
             </form>
             <!-- Footer section -->
             <footer id="socials">
-
+              <div class="container">
+                    <img 
+                    src="assets/logo.png"
+                    />
+                    <h4>Copyright 2023 Festiviews</h4>
+                    <div class="footericons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div class="footbar">
+                    <a href="">Privacyverklaring</a>
+                    <a href="">Algemene voorwaarden</a>
+                    <a href="">Cookiebeleid</a>
+                    <a href="">Contact</a>
+                </div>
+              </div>
             </footer>
     </main>
   </body>
